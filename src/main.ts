@@ -31,6 +31,7 @@ import {
   eat,
   haveEffect,
   buy,
+  pullsRemaining,
 } from "kolmafia";
 
 const KILL_MACRO = Macro.skill("weaksauce")
@@ -89,6 +90,7 @@ function restock() {
 }
 
 function pull() {
+  if (pullsRemaining() <= 6) return;
   cliExecute("pull 3 wrecked generator");
   cliExecute("pull 3 frosty's mug");
   cliExecute("pull moon pie");
@@ -100,7 +102,9 @@ function pull() {
 }
 
 function diet1() {
-  cliExecute("acquire  sausage");
+  if (myInebriety() >= 10) return;
+
+  cliExecute("acquire 3 sausage");
 
   equip($slot`acc3`, $item`powerful glove`);
   ensureSkill($skill`CHEAT CODE: Triple Size`);
@@ -134,7 +138,14 @@ function diet1() {
 }
 
 function diet2() {
+  if (get("spiceMelangeUsed")) return;
+
   use($item`spice melange`);
+
+  if (!have($effect`Ode to Booze`)) {
+    useSkill($skill`The Ode to Booze`, 1);
+  }
+
   withRes("cold", () => {
     cliExecute("drink frosty's mug");
     drink($item`wrecked generator`);
@@ -142,6 +153,8 @@ function diet2() {
 }
 
 function turn0() {
+  if (get("_cargoPocketEmptied")) return;
+
   visitUrl("tutorial.php?action=toot");
   tryUse(1, $item`letter from King Ralph XI`);
   tryUse(1, $item`pork elf goodies sack`);
@@ -163,6 +176,8 @@ function turn0() {
 }
 
 function cobbsKnob() {
+  if (property.getNumber("_backUpUses") >= 10) return;
+
   equip($slot`acc3`, $item`powerful glove`);
   ensureSkill($skill`CHEAT CODE: Triple Size`);
   maximize("mainstat", false);
@@ -189,6 +204,8 @@ function cobbsKnob() {
 }
 
 function hauntedKitchen() {
+  if (have($item`Spookyraven billiards room key`)) return;
+
   KILL_MACRO.setAutoAttack();
 
   cliExecute("beach head hot");
@@ -205,6 +222,8 @@ function hauntedKitchen() {
 }
 
 function hauntedBilliardsRoom() {
+  if (have($item`Spookyraven library key`)) return;
+
   KILL_MACRO.setAutoAttack();
 
   assert(myInebriety() <= 10, "Drank too much!");
@@ -215,7 +234,7 @@ function hauntedBilliardsRoom() {
   while (!have($item`Spookyraven library key`)) {
     if (have($item`handful of hand chalk`)) use($item`handful of hand chalk`);
     ensureSkill($skill`Sonata of Sneakiness`);
-    ensureSkill($skill`Smooth Movements`);
+    ensureSkill($skill`Smooth Movement`);
 
     adv($location`The Haunted Billiards Room`);
   }

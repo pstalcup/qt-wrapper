@@ -43944,8 +43944,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var libram__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(libram__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var kolmafia__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! kolmafia */ "kolmafia");
 /* harmony import */ var kolmafia__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(kolmafia__WEBPACK_IMPORTED_MODULE_0__);
-function _templateObject64() {
+function _templateObject66() {
   var data = _taggedTemplateLiteral(["The Haunted Billiards Room"]);
+
+  _templateObject66 = function _templateObject66() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject65() {
+  var data = _taggedTemplateLiteral(["Smooth Movement"]);
+
+  _templateObject65 = function _templateObject65() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject64() {
+  var data = _taggedTemplateLiteral(["Sonata of Sneakiness"]);
 
   _templateObject64 = function _templateObject64() {
     return data;
@@ -43955,7 +43975,7 @@ function _templateObject64() {
 }
 
 function _templateObject63() {
-  var data = _taggedTemplateLiteral(["Smooth Movements"]);
+  var data = _taggedTemplateLiteral(["handful of hand chalk"]);
 
   _templateObject63 = function _templateObject63() {
     return data;
@@ -43965,7 +43985,7 @@ function _templateObject63() {
 }
 
 function _templateObject62() {
-  var data = _taggedTemplateLiteral(["Sonata of Sneakiness"]);
+  var data = _taggedTemplateLiteral(["handful of hand chalk"]);
 
   _templateObject62 = function _templateObject62() {
     return data;
@@ -43975,7 +43995,7 @@ function _templateObject62() {
 }
 
 function _templateObject61() {
-  var data = _taggedTemplateLiteral(["handful of hand chalk"]);
+  var data = _taggedTemplateLiteral(["Spookyraven library key"]);
 
   _templateObject61 = function _templateObject61() {
     return data;
@@ -43985,7 +44005,7 @@ function _templateObject61() {
 }
 
 function _templateObject60() {
-  var data = _taggedTemplateLiteral(["handful of hand chalk"]);
+  var data = _taggedTemplateLiteral(["CHEAT CODE: Invisible Avatar"]);
 
   _templateObject60 = function _templateObject60() {
     return data;
@@ -43995,7 +44015,7 @@ function _templateObject60() {
 }
 
 function _templateObject59() {
-  var data = _taggedTemplateLiteral(["Spookyraven library key"]);
+  var data = _taggedTemplateLiteral(["powerful glove"]);
 
   _templateObject59 = function _templateObject59() {
     return data;
@@ -44005,7 +44025,7 @@ function _templateObject59() {
 }
 
 function _templateObject58() {
-  var data = _taggedTemplateLiteral(["CHEAT CODE: Invisible Avatar"]);
+  var data = _taggedTemplateLiteral(["acc3"]);
 
   _templateObject58 = function _templateObject58() {
     return data;
@@ -44015,7 +44035,7 @@ function _templateObject58() {
 }
 
 function _templateObject57() {
-  var data = _taggedTemplateLiteral(["powerful glove"]);
+  var data = _taggedTemplateLiteral(["Spookyraven library key"]);
 
   _templateObject57 = function _templateObject57() {
     return data;
@@ -44025,7 +44045,7 @@ function _templateObject57() {
 }
 
 function _templateObject56() {
-  var data = _taggedTemplateLiteral(["acc3"]);
+  var data = _taggedTemplateLiteral(["The Haunted Kitchen"]);
 
   _templateObject56 = function _templateObject56() {
     return data;
@@ -44035,7 +44055,7 @@ function _templateObject56() {
 }
 
 function _templateObject55() {
-  var data = _taggedTemplateLiteral(["The Haunted Kitchen"]);
+  var data = _taggedTemplateLiteral(["Astral Shell"]);
 
   _templateObject55 = function _templateObject55() {
     return data;
@@ -44045,7 +44065,7 @@ function _templateObject55() {
 }
 
 function _templateObject54() {
-  var data = _taggedTemplateLiteral(["Astral Shell"]);
+  var data = _taggedTemplateLiteral(["Elemental Saucesphere"]);
 
   _templateObject54 = function _templateObject54() {
     return data;
@@ -44055,7 +44075,7 @@ function _templateObject54() {
 }
 
 function _templateObject53() {
-  var data = _taggedTemplateLiteral(["Elemental Saucesphere"]);
+  var data = _taggedTemplateLiteral(["Feel Peaceful"]);
 
   _templateObject53 = function _templateObject53() {
     return data;
@@ -44065,7 +44085,7 @@ function _templateObject53() {
 }
 
 function _templateObject52() {
-  var data = _taggedTemplateLiteral(["Feel Peaceful"]);
+  var data = _taggedTemplateLiteral(["Spookyraven billiards room key"]);
 
   _templateObject52 = function _templateObject52() {
     return data;
@@ -44075,7 +44095,7 @@ function _templateObject52() {
 }
 
 function _templateObject51() {
-  var data = _taggedTemplateLiteral(["Spookyraven billiards room key"]);
+  var data = _taggedTemplateLiteral(["Kramco Sausage-o-Matic\u2122"]);
 
   _templateObject51 = function _templateObject51() {
     return data;
@@ -44085,7 +44105,7 @@ function _templateObject51() {
 }
 
 function _templateObject50() {
-  var data = _taggedTemplateLiteral(["Kramco Sausage-o-Matic\u2122"]);
+  var data = _taggedTemplateLiteral(["off-hand"]);
 
   _templateObject50 = function _templateObject50() {
     return data;
@@ -44095,7 +44115,7 @@ function _templateObject50() {
 }
 
 function _templateObject49() {
-  var data = _taggedTemplateLiteral(["off-hand"]);
+  var data = _taggedTemplateLiteral(["Fourth of May Cosplay Saber"]);
 
   _templateObject49 = function _templateObject49() {
     return data;
@@ -44105,7 +44125,7 @@ function _templateObject49() {
 }
 
 function _templateObject48() {
-  var data = _taggedTemplateLiteral(["Fourth of May Cosplay Saber"]);
+  var data = _taggedTemplateLiteral(["weapon"]);
 
   _templateObject48 = function _templateObject48() {
     return data;
@@ -44115,7 +44135,7 @@ function _templateObject48() {
 }
 
 function _templateObject47() {
-  var data = _taggedTemplateLiteral(["weapon"]);
+  var data = _taggedTemplateLiteral(["Spookyraven billiards room key"]);
 
   _templateObject47 = function _templateObject47() {
     return data;
@@ -44641,6 +44661,7 @@ function restock() {
 }
 
 function pull() {
+  if ((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.pullsRemaining)() <= 6) return;
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.cliExecute)("pull 3 wrecked generator");
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.cliExecute)("pull 3 frosty's mug");
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.cliExecute)("pull moon pie");
@@ -44652,7 +44673,8 @@ function pull() {
 }
 
 function diet1() {
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.cliExecute)("acquire  sausage");
+  if ((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.myInebriety)() >= 10) return;
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.cliExecute)("acquire 3 sausage");
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$slot)(_templateObject12()), (0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject13()));
   ensureSkill((0,libram__WEBPACK_IMPORTED_MODULE_1__.$skill)(_templateObject14()));
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.maximize)("mp", true);
@@ -44686,6 +44708,7 @@ function diet1() {
 }
 
 function diet2() {
+  if ((0,libram__WEBPACK_IMPORTED_MODULE_1__.get)("spiceMelangeUsed")) return;
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.use)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject25()));
   withRes("cold", function () {
     (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.cliExecute)("drink frosty's mug");
@@ -44694,6 +44717,7 @@ function diet2() {
 }
 
 function turn0() {
+  if ((0,libram__WEBPACK_IMPORTED_MODULE_1__.get)("_cargoPocketEmptied")) return;
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.visitUrl)("tutorial.php?action=toot");
   tryUse(1, (0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject27()));
   tryUse(1, (0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject28()));
@@ -44713,6 +44737,7 @@ function turn0() {
 }
 
 function cobbsKnob() {
+  if (libram__WEBPACK_IMPORTED_MODULE_1__.property.getNumber("_backUpUses") >= 10) return;
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$slot)(_templateObject36()), (0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject37()));
   ensureSkill((0,libram__WEBPACK_IMPORTED_MODULE_1__.$skill)(_templateObject38()));
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.maximize)("mainstat", false);
@@ -44732,41 +44757,43 @@ function cobbsKnob() {
 }
 
 function hauntedKitchen() {
+  if ((0,libram__WEBPACK_IMPORTED_MODULE_1__.have)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject47()))) return;
   KILL_MACRO.setAutoAttack();
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.cliExecute)("beach head hot");
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.cliExecute)("beach head stench");
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$slot)(_templateObject47()), (0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject48()));
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$slot)(_templateObject49()), (0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject50()));
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$slot)(_templateObject48()), (0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject49()));
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$slot)(_templateObject50()), (0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject51()));
 
-  while (!(0,libram__WEBPACK_IMPORTED_MODULE_1__.have)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject51()))) {
-    ensureSkill((0,libram__WEBPACK_IMPORTED_MODULE_1__.$skill)(_templateObject52()));
+  while (!(0,libram__WEBPACK_IMPORTED_MODULE_1__.have)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject52()))) {
     ensureSkill((0,libram__WEBPACK_IMPORTED_MODULE_1__.$skill)(_templateObject53()));
     ensureSkill((0,libram__WEBPACK_IMPORTED_MODULE_1__.$skill)(_templateObject54()));
-    adv((0,libram__WEBPACK_IMPORTED_MODULE_1__.$location)(_templateObject55()));
+    ensureSkill((0,libram__WEBPACK_IMPORTED_MODULE_1__.$skill)(_templateObject55()));
+    adv((0,libram__WEBPACK_IMPORTED_MODULE_1__.$location)(_templateObject56()));
   }
 }
 
 function hauntedBilliardsRoom() {
+  if ((0,libram__WEBPACK_IMPORTED_MODULE_1__.have)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject57()))) return;
   KILL_MACRO.setAutoAttack();
   assert((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.myInebriety)() <= 10, "Drank too much!");
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$slot)(_templateObject56()), (0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject57()));
-  ensureSkill((0,libram__WEBPACK_IMPORTED_MODULE_1__.$skill)(_templateObject58()));
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$slot)(_templateObject58()), (0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject59()));
+  ensureSkill((0,libram__WEBPACK_IMPORTED_MODULE_1__.$skill)(_templateObject60()));
 
-  while (!(0,libram__WEBPACK_IMPORTED_MODULE_1__.have)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject59()))) {
-    if ((0,libram__WEBPACK_IMPORTED_MODULE_1__.have)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject60()))) (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.use)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject61()));
-    ensureSkill((0,libram__WEBPACK_IMPORTED_MODULE_1__.$skill)(_templateObject62()));
-    ensureSkill((0,libram__WEBPACK_IMPORTED_MODULE_1__.$skill)(_templateObject63()));
-    adv((0,libram__WEBPACK_IMPORTED_MODULE_1__.$location)(_templateObject64()));
+  while (!(0,libram__WEBPACK_IMPORTED_MODULE_1__.have)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject61()))) {
+    if ((0,libram__WEBPACK_IMPORTED_MODULE_1__.have)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject62()))) (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.use)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject63()));
+    ensureSkill((0,libram__WEBPACK_IMPORTED_MODULE_1__.$skill)(_templateObject64()));
+    ensureSkill((0,libram__WEBPACK_IMPORTED_MODULE_1__.$skill)(_templateObject65()));
+    adv((0,libram__WEBPACK_IMPORTED_MODULE_1__.$location)(_templateObject66()));
   }
 }
 
 function day1() {
   pull();
   turn0();
-  cobbsKnob();
+  autoAttackWrap(cobbsKnob);
   diet1();
-  hauntedKitchen();
-  hauntedBilliardsRoom();
+  autoAttackWrap(hauntedKitchen);
+  autoAttackWrap(hauntedBilliardsRoom);
   diet2();
 }
 
