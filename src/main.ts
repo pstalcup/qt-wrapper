@@ -9,6 +9,7 @@ import {
   property,
   $skills,
   $effect,
+  $monster,
 } from "libram";
 import {
   setAutoAttack,
@@ -68,7 +69,7 @@ function tryUse(quantity: number, it: Item) {
 }
 
 function adv(location: Location) {
-  adv1(location, -1, "");
+  adv1(location, -1, () => "");
 }
 
 function withRes(element: string, action: () => void) {
@@ -90,7 +91,7 @@ function restock() {
 }
 
 function pull() {
-  if (pullsRemaining() <= 6) return;
+  if (pullsRemaining() <= 8) return;
   cliExecute("pull 3 wrecked generator");
   cliExecute("pull 3 frosty's mug");
   cliExecute("pull moon pie");
@@ -192,10 +193,16 @@ function cobbsKnob() {
   assert(have($item`Kramco Sausage-o-Matic™`), "Must have kramco!");
   equip($slot`off-hand`, $item`Kramco Sausage-o-Matic™`);
 
-  assert(get("_lastSausageMonsterTurn") == 0, "Need a guaranteed goblin!");
-
-  KILL_MACRO.setAutoAttack();
-  adv($location`The Outskirts of Cobb's Knob`);
+  if (get("feelNostalgicMonster") !== $monster`sausage goblin`) {
+    assert(get("_lastSausageMonsterTurn") == 0, "Need a guaranteed goblin!");
+  }
+  if (
+    get("feelNostalgicMonster") !== $monster`sausage goblin` &&
+    get("_lastSausageMonsterTurn") === 0
+  ) {
+    KILL_MACRO.setAutoAttack();
+    adv($location`The Outskirts of Cobb's Knob`);
+  }
 
   while (property.getNumber("_backUpUses") < 10) {
     backupMacro.setAutoAttack();
