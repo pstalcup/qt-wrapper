@@ -224,10 +224,10 @@ function hauntedBilliardsRoom() {
 function day1() {
   pull();
   turn0();
-  cobbsKnob();
+  autoAttackWrap(cobbsKnob);
   diet1();
-  hauntedKitchen();
-  hauntedBilliardsRoom();
+  autoAttackWrap(hauntedKitchen);
+  autoAttackWrap(hauntedBilliardsRoom);
   diet2();
 }
 
