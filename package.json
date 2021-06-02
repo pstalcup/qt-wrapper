@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "kolmafia": "^1.0.2",
-    "libram": "^0.0.5"
+    "libram": "^0.0.8"
   },
   "author": "Captain Scotch",
   "license": "ISC",
