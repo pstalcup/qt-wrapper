@@ -196,8 +196,13 @@ function cobbsKnob() {
   if (get("feelNostalgicMonster") !== $monster`sausage goblin`) {
     assert(get("_lastSausageMonsterTurn") == 0, "Need a guaranteed goblin!");
   }
-  KILL_MACRO.setAutoAttack();
-  adv($location`The Outskirts of Cobb's Knob`);
+  if (
+    get("feelNostalgicMonster") !== $monster`sausage goblin` &&
+    get("_lastSausageMonsterTurn") === 0
+  ) {
+    KILL_MACRO.setAutoAttack();
+    adv($location`The Outskirts of Cobb's Knob`);
+  }
 
   while (property.getNumber("_backUpUses") < 10) {
     backupMacro.setAutoAttack();
