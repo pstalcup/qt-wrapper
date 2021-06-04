@@ -6,7 +6,7 @@ To install, type
 
 ```
 svn delete qt-wrapper
-svn checkout https://github.com/pstalcup/qt-wrapper/branches/master/RELEASE/
+svn checkout https://github.com/pstalcup/qt-wrapper/branches/master/KolMafia/
 ```
 
 # running it
