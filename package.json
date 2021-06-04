@@ -1,8 +1,8 @@
 {
-  "name": "kol-js-starter",
+  "name": "qt-wrapper",
   "version": "1.0.0",
-  "description": "Example package for KoLmafia TypeScript scripts.",
-  "main": "KoLmafia/scripts/kol-js-starter/main-script-name.js",
+  "description": "Quantum Terrarium Autoscend Wrapper",
+  "main": "KoLmafia/scripts/qt-wrapper.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "patch-package",
@@ -25,7 +25,7 @@
     "webpack-cli": "^4.2.0"
   },
   "dependencies": {
-    "kolmafia": "^1.0.2",
+    "kolmafia": "^1.0.11",
     "libram": "^0.0.8"
   },
   "author": "Captain Scotch",

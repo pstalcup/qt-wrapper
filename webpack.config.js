@@ -11,7 +11,7 @@ module.exports = {
   devtool: false,
   output: {
     // Change the final string here to the name you want your script to use in mafia.
-    path: path.resolve(__dirname, "KoLmafia", "scripts", packageData.name),
+    path: path.resolve(__dirname, "KoLmafia", "scripts"),
     filename: "[name].js",
     libraryTarget: "commonjs",
   },
@@ -32,6 +32,5 @@ module.exports = {
   externals: {
     // Add any ASH scripts you would like to use here.
     kolmafia: "commonjs kolmafia",
-    "canadv.ash": "commonjs canadv.ash",
   },
 };
