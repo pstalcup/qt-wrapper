@@ -163,6 +163,8 @@ function cobbsKnob() {
     adv(outskirts);
   }
 
+  if (have($item`familiar scrapbook`)) equip($slot`off-hand`, $item`familiar scrapbook`);
+
   while (
     property.getNumber("_backUpUses") < 10 &&
     !have(key) &&
@@ -230,6 +232,8 @@ function hauntedBilliardsRoom() {
   ensureSkill($skill`CHEAT CODE: Invisible Avatar`, () =>
     equip($slot`acc3`, $item`powerful glove`)
   );
+
+  if (have($item`familiar scrapbook`)) equip($slot`off-hand`, $item`familiar scrapbook`);
 
   setChoice(875, 1);
 

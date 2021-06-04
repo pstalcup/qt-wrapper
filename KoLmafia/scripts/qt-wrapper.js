@@ -43945,8 +43945,68 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var kolmafia__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! kolmafia */ "kolmafia");
 /* harmony import */ var kolmafia__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(kolmafia__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _lib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib */ "./src/lib.ts");
-function _templateObject68() {
+function _templateObject74() {
   var data = _taggedTemplateLiteral(["The Haunted Billiards Room"]);
+
+  _templateObject74 = function _templateObject74() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject73() {
+  var data = _taggedTemplateLiteral(["Smooth Movement"]);
+
+  _templateObject73 = function _templateObject73() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject72() {
+  var data = _taggedTemplateLiteral(["Sonata of Sneakiness"]);
+
+  _templateObject72 = function _templateObject72() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject71() {
+  var data = _taggedTemplateLiteral(["handful of hand chalk"]);
+
+  _templateObject71 = function _templateObject71() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject70() {
+  var data = _taggedTemplateLiteral(["handful of hand chalk"]);
+
+  _templateObject70 = function _templateObject70() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject69() {
+  var data = _taggedTemplateLiteral(["Spookyraven library key"]);
+
+  _templateObject69 = function _templateObject69() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject68() {
+  var data = _taggedTemplateLiteral(["familiar scrapbook"]);
 
   _templateObject68 = function _templateObject68() {
     return data;
@@ -43956,7 +44016,7 @@ function _templateObject68() {
 }
 
 function _templateObject67() {
-  var data = _taggedTemplateLiteral(["Smooth Movement"]);
+  var data = _taggedTemplateLiteral(["off-hand"]);
 
   _templateObject67 = function _templateObject67() {
     return data;
@@ -43966,7 +44026,7 @@ function _templateObject67() {
 }
 
 function _templateObject66() {
-  var data = _taggedTemplateLiteral(["Sonata of Sneakiness"]);
+  var data = _taggedTemplateLiteral(["familiar scrapbook"]);
 
   _templateObject66 = function _templateObject66() {
     return data;
@@ -43976,7 +44036,7 @@ function _templateObject66() {
 }
 
 function _templateObject65() {
-  var data = _taggedTemplateLiteral(["handful of hand chalk"]);
+  var data = _taggedTemplateLiteral(["powerful glove"]);
 
   _templateObject65 = function _templateObject65() {
     return data;
@@ -43986,7 +44046,7 @@ function _templateObject65() {
 }
 
 function _templateObject64() {
-  var data = _taggedTemplateLiteral(["handful of hand chalk"]);
+  var data = _taggedTemplateLiteral(["acc3"]);
 
   _templateObject64 = function _templateObject64() {
     return data;
@@ -43996,7 +44056,7 @@ function _templateObject64() {
 }
 
 function _templateObject63() {
-  var data = _taggedTemplateLiteral(["Spookyraven library key"]);
+  var data = _taggedTemplateLiteral(["CHEAT CODE: Invisible Avatar"]);
 
   _templateObject63 = function _templateObject63() {
     return data;
@@ -44006,7 +44066,7 @@ function _templateObject63() {
 }
 
 function _templateObject62() {
-  var data = _taggedTemplateLiteral(["powerful glove"]);
+  var data = _taggedTemplateLiteral(["Spookyraven library key"]);
 
   _templateObject62 = function _templateObject62() {
     return data;
@@ -44016,7 +44076,7 @@ function _templateObject62() {
 }
 
 function _templateObject61() {
-  var data = _taggedTemplateLiteral(["acc3"]);
+  var data = _taggedTemplateLiteral(["The Haunted Kitchen"]);
 
   _templateObject61 = function _templateObject61() {
     return data;
@@ -44026,7 +44086,7 @@ function _templateObject61() {
 }
 
 function _templateObject60() {
-  var data = _taggedTemplateLiteral(["CHEAT CODE: Invisible Avatar"]);
+  var data = _taggedTemplateLiteral(["Astral Shell"]);
 
   _templateObject60 = function _templateObject60() {
     return data;
@@ -44036,7 +44096,7 @@ function _templateObject60() {
 }
 
 function _templateObject59() {
-  var data = _taggedTemplateLiteral(["Spookyraven library key"]);
+  var data = _taggedTemplateLiteral(["Elemental Saucesphere"]);
 
   _templateObject59 = function _templateObject59() {
     return data;
@@ -44046,7 +44106,7 @@ function _templateObject59() {
 }
 
 function _templateObject58() {
-  var data = _taggedTemplateLiteral(["The Haunted Kitchen"]);
+  var data = _taggedTemplateLiteral(["Feel Peaceful"]);
 
   _templateObject58 = function _templateObject58() {
     return data;
@@ -44056,7 +44116,7 @@ function _templateObject58() {
 }
 
 function _templateObject57() {
-  var data = _taggedTemplateLiteral(["Astral Shell"]);
+  var data = _taggedTemplateLiteral(["Spookyraven billiards room key"]);
 
   _templateObject57 = function _templateObject57() {
     return data;
@@ -44066,7 +44126,7 @@ function _templateObject57() {
 }
 
 function _templateObject56() {
-  var data = _taggedTemplateLiteral(["Elemental Saucesphere"]);
+  var data = _taggedTemplateLiteral(["Kramco Sausage-o-Matic\u2122"]);
 
   _templateObject56 = function _templateObject56() {
     return data;
@@ -44076,7 +44136,7 @@ function _templateObject56() {
 }
 
 function _templateObject55() {
-  var data = _taggedTemplateLiteral(["Feel Peaceful"]);
+  var data = _taggedTemplateLiteral(["off-hand"]);
 
   _templateObject55 = function _templateObject55() {
     return data;
@@ -44086,7 +44146,7 @@ function _templateObject55() {
 }
 
 function _templateObject54() {
-  var data = _taggedTemplateLiteral(["Spookyraven billiards room key"]);
+  var data = _taggedTemplateLiteral(["Fourth of May Cosplay Saber"]);
 
   _templateObject54 = function _templateObject54() {
     return data;
@@ -44096,7 +44156,7 @@ function _templateObject54() {
 }
 
 function _templateObject53() {
-  var data = _taggedTemplateLiteral(["Kramco Sausage-o-Matic\u2122"]);
+  var data = _taggedTemplateLiteral(["weapon"]);
 
   _templateObject53 = function _templateObject53() {
     return data;
@@ -44106,7 +44166,7 @@ function _templateObject53() {
 }
 
 function _templateObject52() {
-  var data = _taggedTemplateLiteral(["off-hand"]);
+  var data = _taggedTemplateLiteral(["Spookyraven billiards room key"]);
 
   _templateObject52 = function _templateObject52() {
     return data;
@@ -44116,7 +44176,7 @@ function _templateObject52() {
 }
 
 function _templateObject51() {
-  var data = _taggedTemplateLiteral(["Fourth of May Cosplay Saber"]);
+  var data = _taggedTemplateLiteral(["sausage goblin"]);
 
   _templateObject51 = function _templateObject51() {
     return data;
@@ -44126,7 +44186,7 @@ function _templateObject51() {
 }
 
 function _templateObject50() {
-  var data = _taggedTemplateLiteral(["weapon"]);
+  var data = _taggedTemplateLiteral(["mosquito larva"]);
 
   _templateObject50 = function _templateObject50() {
     return data;
@@ -44136,7 +44196,7 @@ function _templateObject50() {
 }
 
 function _templateObject49() {
-  var data = _taggedTemplateLiteral(["Spookyraven billiards room key"]);
+  var data = _taggedTemplateLiteral(["Spooky Forest"]);
 
   _templateObject49 = function _templateObject49() {
     return data;
@@ -44146,7 +44206,7 @@ function _templateObject49() {
 }
 
 function _templateObject48() {
-  var data = _taggedTemplateLiteral(["sausage goblin"]);
+  var data = _taggedTemplateLiteral(["familiar scrapbook"]);
 
   _templateObject48 = function _templateObject48() {
     return data;
@@ -44156,7 +44216,7 @@ function _templateObject48() {
 }
 
 function _templateObject47() {
-  var data = _taggedTemplateLiteral(["mosquito larva"]);
+  var data = _taggedTemplateLiteral(["off-hand"]);
 
   _templateObject47 = function _templateObject47() {
     return data;
@@ -44166,7 +44226,7 @@ function _templateObject47() {
 }
 
 function _templateObject46() {
-  var data = _taggedTemplateLiteral(["Spooky Forest"]);
+  var data = _taggedTemplateLiteral(["familiar scrapbook"]);
 
   _templateObject46 = function _templateObject46() {
     return data;
@@ -44742,6 +44802,8 @@ function cobbsKnob() {
     (0,_lib__WEBPACK_IMPORTED_MODULE_1__.adv)(outskirts);
   }
 
+  if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.have)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject46()))) (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject47()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject48()));
+
   while (libram__WEBPACK_IMPORTED_MODULE_2__.property.getNumber("_backUpUses") < 10 && !(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)(key) && (0,_lib__WEBPACK_IMPORTED_MODULE_1__.questStep)("questL05Goblin") === 0) {
     _lib__WEBPACK_IMPORTED_MODULE_1__.BACKUP_MACRO.setAutoAttack();
     (0,_lib__WEBPACK_IMPORTED_MODULE_1__.adv)(outskirts);
@@ -44749,14 +44811,14 @@ function cobbsKnob() {
 }
 
 function spookyForest() {
-  var forest = (0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject46());
-  var larva = (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject47());
+  var forest = (0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject49());
+  var larva = (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject50());
   if (libram__WEBPACK_IMPORTED_MODULE_2__.property.getNumber("_backUpUses") == 11 || forest.turnsSpent > 5 || (0,libram__WEBPACK_IMPORTED_MODULE_2__.have)(larva) || (0,_lib__WEBPACK_IMPORTED_MODULE_1__.questStep)("questL02Larva") > 0) return;
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.visitUrl)("council.php"); // solve the mosquito quest
 
   (0,_lib__WEBPACK_IMPORTED_MODULE_1__.setChoice)(502, 2);
   (0,_lib__WEBPACK_IMPORTED_MODULE_1__.setChoice)(505, 1);
-  if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("feelNostalgicMonster") !== (0,libram__WEBPACK_IMPORTED_MODULE_2__.$monster)(_templateObject48())) return;
+  if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("feelNostalgicMonster") !== (0,libram__WEBPACK_IMPORTED_MODULE_2__.$monster)(_templateObject51())) return;
 
   while (libram__WEBPACK_IMPORTED_MODULE_2__.property.getNumber("_backUpUses") < 11 && !(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)(larva) && (0,_lib__WEBPACK_IMPORTED_MODULE_1__.questStep)("questL02Larva") === 0) {
     _lib__WEBPACK_IMPORTED_MODULE_1__.BACKUP_MACRO.setAutoAttack();
@@ -44765,35 +44827,36 @@ function spookyForest() {
 }
 
 function hauntedKitchen() {
-  if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.have)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject49()))) return;
+  if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.have)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject52()))) return;
   _lib__WEBPACK_IMPORTED_MODULE_1__.KILL_MACRO.setAutoAttack();
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.cliExecute)("beach head hot");
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.cliExecute)("beach head stench");
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject50()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject51()));
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject52()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject53()));
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject53()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject54()));
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject55()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject56()));
 
-  while (!(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject54()))) {
-    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.ensureSkill)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$skill)(_templateObject55()));
-    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.ensureSkill)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$skill)(_templateObject56()));
-    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.ensureSkill)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$skill)(_templateObject57()));
-    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.adv)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject58()));
+  while (!(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject57()))) {
+    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.ensureSkill)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$skill)(_templateObject58()));
+    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.ensureSkill)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$skill)(_templateObject59()));
+    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.ensureSkill)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$skill)(_templateObject60()));
+    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.adv)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject61()));
   }
 }
 
 function hauntedBilliardsRoom() {
-  if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.have)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject59()))) return;
+  if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.have)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject62()))) return;
   _lib__WEBPACK_IMPORTED_MODULE_1__.KILL_MACRO.setAutoAttack();
   (0,_lib__WEBPACK_IMPORTED_MODULE_1__.assert)((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.myInebriety)() <= 10, "Drank too much!");
-  (0,_lib__WEBPACK_IMPORTED_MODULE_1__.ensureSkill)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$skill)(_templateObject60()), function () {
-    return (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject61()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject62()));
+  (0,_lib__WEBPACK_IMPORTED_MODULE_1__.ensureSkill)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$skill)(_templateObject63()), function () {
+    return (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject64()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject65()));
   });
+  if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.have)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject66()))) (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject67()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject68()));
   (0,_lib__WEBPACK_IMPORTED_MODULE_1__.setChoice)(875, 1);
 
-  while (!(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject63()))) {
-    if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.have)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject64()))) (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.use)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject65()));
-    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.ensureSkill)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$skill)(_templateObject66()));
-    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.ensureSkill)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$skill)(_templateObject67()));
-    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.adv)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject68()));
+  while (!(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject69()))) {
+    if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.have)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject70()))) (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.use)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject71()));
+    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.ensureSkill)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$skill)(_templateObject72()));
+    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.ensureSkill)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$skill)(_templateObject73()));
+    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.adv)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject74()));
   }
 }
 
