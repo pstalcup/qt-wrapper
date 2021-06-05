@@ -54,7 +54,9 @@ function pull() {
   cliExecute("pull 2 frosty's frosty mug");
   cliExecute("pull 1 moon pie");
   cliExecute("pull ol' scratch's salad fork");
-  cliExecute("pull 3 disassembled clover");
+  let totalClovers =
+    availableAmount($item`disassembled clover`) + availableAmount($item`disassembled clover`);
+  cliExecute(`pull ${3 - totalClovers} disassembled clover`);
   cliExecute("pull 1 bag of lard");
 }
 
@@ -102,7 +104,7 @@ function diet() {
 
 function mobOfProtesters() {
   let disClover = $item`disassembled clover`;
-  let tenClover = $item`ten-leaf clover`;
+  let tenClover = $item`disassembled clover`;
 
   if ((!have(disClover) && !have(tenClover)) || questStep("questL11Ron") >= 2) return;
 
