@@ -44889,178 +44889,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var libram__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! libram */ "./node_modules/libram/dist/index.js");
 /* harmony import */ var libram__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(libram__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _lib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib */ "./src/lib.ts");
-function _templateObject32() {
-  var data = _taggedTemplateLiteral(["sausage goblin"]);
-
-  _templateObject32 = function _templateObject32() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject31() {
-  var data = _taggedTemplateLiteral(["Kramco Sausage-o-Matic\u2122"]);
-
-  _templateObject31 = function _templateObject31() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject30() {
-  var data = _taggedTemplateLiteral(["off-hand"]);
-
-  _templateObject30 = function _templateObject30() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject29() {
-  var data = _taggedTemplateLiteral(["The Copperhead Club"]);
-
-  _templateObject29 = function _templateObject29() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject28() {
-  var data = _taggedTemplateLiteral(["A Mob of Zeppelin Protesters"]);
-
-  _templateObject28 = function _templateObject28() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject27() {
-  var data = _taggedTemplateLiteral(["deck of lewd playing cards"]);
-
-  _templateObject27 = function _templateObject27() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject26() {
-  var data = _taggedTemplateLiteral(["off-hand"]);
-
-  _templateObject26 = function _templateObject26() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject25() {
-  var data = _taggedTemplateLiteral(["Fourth of May Cosplay Saber"]);
-
-  _templateObject25 = function _templateObject25() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject24() {
-  var data = _taggedTemplateLiteral(["weapon"]);
-
-  _templateObject24 = function _templateObject24() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject23() {
-  var data = _taggedTemplateLiteral(["bag of lard"]);
-
-  _templateObject23 = function _templateObject23() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject22() {
-  var data = _taggedTemplateLiteral(["ten-leaf clover"]);
-
-  _templateObject22 = function _templateObject22() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject21() {
-  var data = _taggedTemplateLiteral(["disassembled clover"]);
-
-  _templateObject21 = function _templateObject21() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject20() {
-  var data = _taggedTemplateLiteral(["moon pie"]);
-
-  _templateObject20 = function _templateObject20() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject19() {
-  var data = _taggedTemplateLiteral(["ol' scratch's salad fork"]);
-
-  _templateObject19 = function _templateObject19() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject18() {
-  var data = _taggedTemplateLiteral(["wrecked generator"]);
-
-  _templateObject18 = function _templateObject18() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject17() {
-  var data = _taggedTemplateLiteral(["frosty's frosty mug"]);
-
-  _templateObject17 = function _templateObject17() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject16() {
-  var data = _taggedTemplateLiteral(["wrecked generator"]);
-
-  _templateObject16 = function _templateObject16() {
-    return data;
-  };
-
-  return data;
-}
-
 function _templateObject15() {
-  var data = _taggedTemplateLiteral(["frosty's frosty mug"]);
+  var data = _taggedTemplateLiteral(["sausage goblin"]);
 
   _templateObject15 = function _templateObject15() {
     return data;
@@ -45070,7 +44900,7 @@ function _templateObject15() {
 }
 
 function _templateObject14() {
-  var data = _taggedTemplateLiteral(["Mysterious Island Iced Tea"]);
+  var data = _taggedTemplateLiteral(["Kramco Sausage-o-Matic\u2122"]);
 
   _templateObject14 = function _templateObject14() {
     return data;
@@ -45080,7 +44910,7 @@ function _templateObject14() {
 }
 
 function _templateObject13() {
-  var data = _taggedTemplateLiteral(["Flaming Knob"]);
+  var data = _taggedTemplateLiteral(["off-hand"]);
 
   _templateObject13 = function _templateObject13() {
     return data;
@@ -45090,7 +44920,7 @@ function _templateObject13() {
 }
 
 function _templateObject12() {
-  var data = _taggedTemplateLiteral(["The Ode to Booze"]);
+  var data = _taggedTemplateLiteral(["The Copperhead Club"]);
 
   _templateObject12 = function _templateObject12() {
     return data;
@@ -45100,7 +44930,7 @@ function _templateObject12() {
 }
 
 function _templateObject11() {
-  var data = _taggedTemplateLiteral(["Ode to Booze"]);
+  var data = _taggedTemplateLiteral(["A Mob of Zeppelin Protesters"]);
 
   _templateObject11 = function _templateObject11() {
     return data;
@@ -45110,7 +44940,7 @@ function _templateObject11() {
 }
 
 function _templateObject10() {
-  var data = _taggedTemplateLiteral(["diabolic pizza"]);
+  var data = _taggedTemplateLiteral(["deck of lewd playing cards"]);
 
   _templateObject10 = function _templateObject10() {
     return data;
@@ -45120,7 +44950,7 @@ function _templateObject10() {
 }
 
 function _templateObject9() {
-  var data = _taggedTemplateLiteral(["ravioli hat"]);
+  var data = _taggedTemplateLiteral(["off-hand"]);
 
   _templateObject9 = function _templateObject9() {
     return data;
@@ -45130,7 +44960,7 @@ function _templateObject9() {
 }
 
 function _templateObject8() {
-  var data = _taggedTemplateLiteral(["dry noodles"]);
+  var data = _taggedTemplateLiteral(["Fourth of May Cosplay Saber"]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -45140,7 +44970,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = _taggedTemplateLiteral(["dense meat stack"]);
+  var data = _taggedTemplateLiteral(["weapon"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -45150,7 +44980,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = _taggedTemplateLiteral(["ravioli hat"]);
+  var data = _taggedTemplateLiteral(["bag of lard"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -45160,7 +44990,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["Pastamastery"]);
+  var data = _taggedTemplateLiteral(["ten-leaf clover"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -45170,7 +45000,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["dry noodles"]);
+  var data = _taggedTemplateLiteral(["disassembled clover"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -45236,41 +45066,42 @@ function pull() {
 }
 
 function diet() {
-  if ((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.myFullness)() > 0 && (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.myInebriety)() > 0) return; // get pizza letters:
+  if ((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.myFullness)() > 0 && (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.myInebriety)() > 0) return;
+  throw "Day 2 Diet must be done by hand currently";
+  /*
+  // get pizza letters:
   // D I R T
-
-  if (!(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject4()))) (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.useSkill)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$skill)(_templateObject5()));
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.retrieveItem)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject6()));
-  var d = (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.myMeat)() > 2000 ? (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject7()) : (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject8());
-  var i = (0,_lib__WEBPACK_IMPORTED_MODULE_1__.findItem)("I");
-  var r = (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject9());
-  var t = (0,_lib__WEBPACK_IMPORTED_MODULE_1__.findItem)("T");
-  (0,_lib__WEBPACK_IMPORTED_MODULE_1__.cookPizza)(d, i, r, t);
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.eat)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject10()));
-
-  if (!(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$effect)(_templateObject11()))) {
-    (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.useSkill)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$skill)(_templateObject12()), 3);
+  if (!have($item`dry noodles`)) useSkill($skill`Pastamastery`);
+  if (!have($item`ravioli hat`)) retrieveItem($item`ravioli hat`);
+   let d = $item`dry noodles`;
+  let i = findItem("I");
+  let r = $item`ravioli hat`;
+  let t = findItem("T");
+   //cookPizza(d, i, r, t);
+  eat($item`diabolic pizza`);
+   if (!have($effect`Ode to Booze`)) {
+    useSkill($skill`The Ode to Booze`, 3);
   }
-
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.drink)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject13()));
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.drink)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject14()));
-  withRes("cold", function () {
-    (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.drink)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject15()));
-    (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.drink)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject16()));
+   drink($item`Flaming Knob`);
+  drink($item`Mysterious Island Iced Tea`);
+   withRes("cold", () => {
+    drink($item`frosty's frosty mug`);
+    drink($item`wrecked generator`);
   });
-  withRes("cold", function () {
-    (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.drink)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject17()));
-    (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.drink)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject18()));
+   withRes("cold", () => {
+    drink($item`frosty's frosty mug`);
+    drink($item`wrecked generator`);
   });
-  withRes("hot", function () {
-    (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.drink)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject19()));
-    (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.drink)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject20()));
+   withRes("hot", () => {
+    drink($item`ol' scratch's salad fork`);
+    drink($item`moon pie`);
   });
+  */
 }
 
 function mobOfProtesters() {
-  var disClover = (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject21());
-  var tenClover = (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject22());
+  var disClover = (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject4());
+  var tenClover = (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject5());
   if (!(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)(disClover) && !(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)(tenClover) || (0,_lib__WEBPACK_IMPORTED_MODULE_1__.questStep)("questL11Ron") >= 2) return; // Sleaze Calculation:
   // beach comb:
   // +15 / +15 - 30 - 30
@@ -45288,11 +45119,11 @@ function mobOfProtesters() {
   // +50 / 0 - 50 - 368
   // Dirty Pear - sqrt(736) -
 
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.cliExecute)("comb sleaze");
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.use)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject23()));
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.cliExecute)("beach head sleaze");
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.use)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject6()));
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.maximize)("sleaze damage, sleaze spell damage", false);
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject24()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject25()));
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject26()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject27()));
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject7()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject8()));
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject9()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject10()));
 
   var getClover = function getClover() {
     if (!(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)(tenClover)) (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.use)(disClover);
@@ -45304,17 +45135,17 @@ function mobOfProtesters() {
   while ((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.availableAmount)(tenClover) + (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.availableAmount)(disClover) > 0 && (0,_lib__WEBPACK_IMPORTED_MODULE_1__.questStep)("questL11Ron") < 2) {
     libram__WEBPACK_IMPORTED_MODULE_2__.Macro.abort().setAutoAttack();
     getClover();
-    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.adv)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject28()));
+    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.adv)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject11()));
   }
 }
 
 function shen(questLevel) {
   if ((0,_lib__WEBPACK_IMPORTED_MODULE_1__.questStep)("questL11Shen") > questLevel || libram__WEBPACK_IMPORTED_MODULE_2__.property.getNumber("_backUpUses") >= 11) return;
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.maximize)("mainstat", false);
-  var club = (0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject29());
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject30()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject31()));
+  var club = (0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject12());
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject13()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject14()));
 
-  if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("feelNostalgicMonster") !== (0,libram__WEBPACK_IMPORTED_MODULE_2__.$monster)(_templateObject32()) && (0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("_lastSausageMonsterTurn") === 0) {
+  if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("feelNostalgicMonster") !== (0,libram__WEBPACK_IMPORTED_MODULE_2__.$monster)(_templateObject15()) && (0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("_lastSausageMonsterTurn") === 0) {
     _lib__WEBPACK_IMPORTED_MODULE_1__.KILL_MACRO.setAutoAttack();
     (0,_lib__WEBPACK_IMPORTED_MODULE_1__.adv)(club);
   }
@@ -45365,6 +45196,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var kolmafia__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(kolmafia__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var libram__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! libram */ "./node_modules/libram/dist/index.js");
 /* harmony import */ var libram__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(libram__WEBPACK_IMPORTED_MODULE_1__);
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["diabolic pizza"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject2() {
   var data = _taggedTemplateLiteral(["none"]);
 
@@ -45435,7 +45276,10 @@ function cookPizza(a, b, c, d) {
   ingredients.forEach(function (i) {
     assert((0,libram__WEBPACK_IMPORTED_MODULE_1__.have)(i), "Missing ".concat(i, " for cooking pizza (").concat(effect, ")!"));
   });
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.visitUrl)("campground.php?action=makepizza&pizza=".concat((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toInt)(a), ",").concat((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toInt)(b), ",").concat((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toInt)(c), ",").concat((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toInt)(d)));
+  var url = "campground.php?action=makepizza&pizza=".concat((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toInt)(a), ",").concat((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toInt)(b), ",").concat((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toInt)(c), ",").concat((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toInt)(d));
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.print)(url);
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.visitUrl)(url, false);
+  assert((0,libram__WEBPACK_IMPORTED_MODULE_1__.have)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject3())), "Failed to cook pizza ".concat(effect));
 }
 function questStep(questName) {
   var stringStep = libram__WEBPACK_IMPORTED_MODULE_1__.property.getString(questName);

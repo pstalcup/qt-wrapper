@@ -61,17 +61,19 @@ function pull() {
 function diet() {
   if (myFullness() > 0 && myInebriety() > 0) return;
 
+  throw "Day 2 Diet must be done by hand currently";
+  /*
   // get pizza letters:
   // D I R T
   if (!have($item`dry noodles`)) useSkill($skill`Pastamastery`);
-  retrieveItem($item`ravioli hat`);
+  if (!have($item`ravioli hat`)) retrieveItem($item`ravioli hat`);
 
-  let d = myMeat() > 2000 ? $item`dense meat stack` : $item`dry noodles`;
+  let d = $item`dry noodles`;
   let i = findItem("I");
   let r = $item`ravioli hat`;
   let t = findItem("T");
 
-  cookPizza(d, i, r, t);
+  //cookPizza(d, i, r, t);
   eat($item`diabolic pizza`);
 
   if (!have($effect`Ode to Booze`)) {
@@ -95,6 +97,7 @@ function diet() {
     drink($item`ol' scratch's salad fork`);
     drink($item`moon pie`);
   });
+  */
 }
 
 function mobOfProtesters() {
@@ -120,7 +123,7 @@ function mobOfProtesters() {
   // +50 / 0 - 50 - 368
   // Dirty Pear - sqrt(736) -
 
-  cliExecute("comb sleaze");
+  cliExecute("beach head sleaze");
   use($item`bag of lard`);
   maximize("sleaze damage, sleaze spell damage", false);
 

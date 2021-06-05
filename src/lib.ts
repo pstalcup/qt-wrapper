@@ -8,6 +8,7 @@ import {
   getInventory,
   visitUrl,
   toInt,
+  print,
 } from "kolmafia";
 import { have, Macro, $items, $item, property } from "libram";
 
@@ -68,7 +69,10 @@ export function cookPizza(a: Item, b: Item, c: Item, d: Item) {
   ingredients.forEach((i) => {
     assert(have(i), `Missing ${i} for cooking pizza (${effect})!`);
   });
-  visitUrl(`campground.php?action=makepizza&pizza=${toInt(a)},${toInt(b)},${toInt(c)},${toInt(d)}`);
+  let url = `campground.php?action=makepizza&pizza=${toInt(a)},${toInt(b)},${toInt(c)},${toInt(d)}`;
+  print(url);
+  visitUrl(url, false);
+  assert(have($item`diabolic pizza`), `Failed to cook pizza ${effect}`);
 }
 
 export function questStep(questName: string) {
