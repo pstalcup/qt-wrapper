@@ -6,7 +6,7 @@ To install, type
 
 ```
 svn delete qt-wrapper
-svn checkout https://github.com/pstalcup/qt-wrapper/branches/master/KoLmafia/
+svn checkout https://github.com/pstalcup/qt-wrapper/branches/main/KoLmafia/
 ```
 
 # running it
@@ -21,7 +21,9 @@ qt-wrapper stock
 
 to buy the required items to be pulled (note some of them are expensive, so you may need to buy them by hand depending on your automation settings)
 
-After ascending, on day 1, type
+## Class and Sign
+
+Ascend as Sauceror under The Wallaby 
 
 ## Day 1
 
