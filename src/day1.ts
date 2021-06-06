@@ -156,7 +156,7 @@ function cobbsKnob() {
   equip($slot`off-hand`, $item`Kramco Sausage-o-Matic™`);
 
   if (
-    get("feelNostalgicMonster") !== $monster`sausage goblin` &&
+    get<Monster>("lastCopyableMonster") !== $monster`sausage goblin` &&
     get("_lastSausageMonsterTurn") === 0
   ) {
     KILL_MACRO.setAutoAttack();
@@ -193,7 +193,7 @@ function spookyForest() {
   setChoice(502, 2);
   setChoice(505, 1);
 
-  if (get("feelNostalgicMonster") !== $monster`sausage goblin`) return;
+  if (get<Monster>("lastCopyableMonster") !== $monster`sausage goblin`) return;
   while (
     property.getNumber("_backUpUses") < 11 &&
     !have(larva) &&

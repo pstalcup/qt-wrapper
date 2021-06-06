@@ -157,7 +157,7 @@ function shen(questLevel: number) {
   equip($slot`off-hand`, $item`Kramco Sausage-o-Matic™`);
 
   if (
-    get("feelNostalgicMonster") !== $monster`sausage goblin` &&
+    get<Monster>("lastCopyableMonster") !== $monster`sausage goblin` &&
     get("_lastSausageMonsterTurn") === 0
   ) {
     KILL_MACRO.setAutoAttack();
