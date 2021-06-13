@@ -9,6 +9,8 @@ import {
   visitUrl,
   toInt,
   print,
+  getWorkshed,
+  toItem,
 } from "kolmafia";
 import { have, Macro, $items, $item, property } from "libram";
 
@@ -98,4 +100,14 @@ export function propertySkill(propName: string, skill: Skill) {
   if (!property.getBoolean(propName)) {
     useSkill(skill);
   }
+}
+
+export function findPizzaItem(letter: string) {
+  if (getWorkshed() !== $item`diabolic pizza cube`)
+    throw "You gotta have your pizza cube out for this to work!";
+  const searcher = new RegExp(`value="\d+"\>(${letter}[^<]+)\s\(\d+\)\<\/option\>`);
+  const pizzaCube = visitUrl("campground.php?action=workshed");
+  const item = pizzaCube.match(searcher);
+  if (item) return toItem(item[1]);
+  else return $item`none`;
 }
