@@ -14,6 +14,9 @@ import {
   use,
   availableAmount,
   pullsRemaining,
+  haveEffect,
+  visitUrl,
+  toUrl,
 } from "kolmafia";
 import {
   $item,
@@ -47,7 +50,7 @@ function withRes(element: string, action: () => void) {
 
 function pull() {
   if (pullsRemaining() < 20) return;
-  cliExecute("pull deck of lewd playing cards");
+  cliExecute("pull 1 deck of lewd playing cards");
   cliExecute("pull 2 wrecked generator");
   cliExecute("pull 1 mysterious island iced tea");
   cliExecute("pull 1 Flaming Knob");
@@ -55,7 +58,7 @@ function pull() {
   cliExecute("pull 1 moon pie");
   cliExecute("pull ol' scratch's salad fork");
   let totalClovers =
-    availableAmount($item`disassembled clover`) + availableAmount($item`disassembled clover`);
+    availableAmount($item`disassembled clover`) + availableAmount($item`ten-leaf clover`);
   cliExecute(`pull ${3 - totalClovers} disassembled clover`);
   cliExecute("pull 1 bag of lard");
 }
@@ -63,23 +66,23 @@ function pull() {
 function diet() {
   if (myFullness() > 0 && myInebriety() > 0) return;
 
-  throw "Day 2 Diet must be done by hand currently";
-  /*
+  //throw "Day 2 Diet must be done by hand currently";
+
   // get pizza letters:
   // D I R T
   if (!have($item`dry noodles`)) useSkill($skill`Pastamastery`);
   if (!have($item`ravioli hat`)) retrieveItem($item`ravioli hat`);
 
   let d = $item`dry noodles`;
-  let i = findItem("I");
+  let i = $item`imp ale`;
   let r = $item`ravioli hat`;
-  let t = findItem("T");
+  let t = $item`typical tavern swill`;
 
-  //cookPizza(d, i, r, t);
+  cookPizza(d, i, r, t);
   eat($item`diabolic pizza`);
 
-  if (!have($effect`Ode to Booze`)) {
-    useSkill($skill`The Ode to Booze`, 3);
+  if (haveEffect($effect`Ode to Booze`) < 15) {
+    useSkill($skill`The Ode to Booze`, 2);
   }
 
   drink($item`Flaming Knob`);
@@ -99,15 +102,14 @@ function diet() {
     drink($item`ol' scratch's salad fork`);
     drink($item`moon pie`);
   });
-  */
 }
 
 function mobOfProtesters() {
   let disClover = $item`disassembled clover`;
-  let tenClover = $item`disassembled clover`;
+  let tenClover = $item`ten-leaf clover`;
 
   if ((!have(disClover) && !have(tenClover)) || questStep("questL11Ron") >= 2) return;
-
+  if (get("questL11Ron") === "started") visitUrl(toUrl($location`A Mob of Zeppelin Protesters`));
   // Sleaze Calculation:
   // beach comb:
   // +15 / +15 - 30 - 30
@@ -125,8 +127,8 @@ function mobOfProtesters() {
   // +50 / 0 - 50 - 368
   // Dirty Pear - sqrt(736) -
 
-  cliExecute("beach head sleaze");
-  use($item`bag of lard`);
+  if (!property.getString("_beachHeadsUsed").includes("5")) cliExecute("beach head sleaze");
+  if (!have($effect`Cuts Like a Buttered Knife`)) use($item`bag of lard`);
   maximize("sleaze damage, sleaze spell damage", false);
 
   equip($slot`weapon`, $item`Fourth of May Cosplay Saber`);
@@ -147,6 +149,9 @@ function mobOfProtesters() {
     getClover();
     adv($location`A Mob of Zeppelin Protesters`);
   }
+  if (questStep("questL11Ron") === 1 && get("zeppelinProtestors") >= 80) {
+    visitUrl(toUrl($location`A Mob of Zeppelin Protesters`));
+  }
 }
 
 function shen(questLevel: number) {
@@ -157,7 +162,7 @@ function shen(questLevel: number) {
   equip($slot`off-hand`, $item`Kramco Sausage-o-Matic™`);
 
   if (
-    get("feelNostalgicMonster") !== $monster`sausage goblin` &&
+    get<Monster>("lastCopyableMonster") !== $monster`sausage goblin` &&
     get("_lastSausageMonsterTurn") === 0
   ) {
     KILL_MACRO.setAutoAttack();
