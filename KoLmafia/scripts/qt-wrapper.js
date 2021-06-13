@@ -45351,7 +45351,7 @@ function mobOfProtesters() {
   // +50 / 0 - 50 - 368
   // Dirty Pear - sqrt(736) -
 
-  if (!(0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("_beachHeadsUsed").includes("5")) (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.cliExecute)("beach head sleaze");
+  if (!libram__WEBPACK_IMPORTED_MODULE_2__.property.getString("_beachHeadsUsed").includes("5")) (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.cliExecute)("beach head sleaze");
   if (!(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$effect)(_templateObject28()))) (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.use)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject29()));
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.maximize)("sleaze damage, sleaze spell damage", false);
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject30()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject31()));
