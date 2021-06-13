@@ -44889,8 +44889,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var libram__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! libram */ "../kol-js-starter/node_modules/libram/dist/index.js");
 /* harmony import */ var libram__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(libram__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _lib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib */ "./src/lib.ts");
-function _templateObject38() {
+function _templateObject39() {
   var data = _taggedTemplateLiteral(["sausage goblin"]);
+
+  _templateObject39 = function _templateObject39() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject38() {
+  var data = _taggedTemplateLiteral(["Kramco Sausage-o-Matic\u2122"]);
 
   _templateObject38 = function _templateObject38() {
     return data;
@@ -44900,7 +44910,7 @@ function _templateObject38() {
 }
 
 function _templateObject37() {
-  var data = _taggedTemplateLiteral(["Kramco Sausage-o-Matic\u2122"]);
+  var data = _taggedTemplateLiteral(["off-hand"]);
 
   _templateObject37 = function _templateObject37() {
     return data;
@@ -44910,7 +44920,7 @@ function _templateObject37() {
 }
 
 function _templateObject36() {
-  var data = _taggedTemplateLiteral(["off-hand"]);
+  var data = _taggedTemplateLiteral(["The Copperhead Club"]);
 
   _templateObject36 = function _templateObject36() {
     return data;
@@ -44920,7 +44930,7 @@ function _templateObject36() {
 }
 
 function _templateObject35() {
-  var data = _taggedTemplateLiteral(["The Copperhead Club"]);
+  var data = _taggedTemplateLiteral(["A Mob of Zeppelin Protesters"]);
 
   _templateObject35 = function _templateObject35() {
     return data;
@@ -45220,7 +45230,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["disassembled clover"]);
+  var data = _taggedTemplateLiteral(["ten-leaf clover"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -45369,15 +45379,19 @@ function mobOfProtesters() {
     getClover();
     (0,_lib__WEBPACK_IMPORTED_MODULE_1__.adv)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject34()));
   }
+
+  if ((0,_lib__WEBPACK_IMPORTED_MODULE_1__.questStep)("questL11Ron") === 1 && (0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("zeppelinProtestors") >= 80) {
+    (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.visitUrl)((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toUrl)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject35())));
+  }
 }
 
 function shen(questLevel) {
   if ((0,_lib__WEBPACK_IMPORTED_MODULE_1__.questStep)("questL11Shen") > questLevel || libram__WEBPACK_IMPORTED_MODULE_2__.property.getNumber("_backUpUses") >= 11) return;
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.maximize)("mainstat", false);
-  var club = (0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject35());
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject36()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject37()));
+  var club = (0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject36());
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject37()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject38()));
 
-  if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("lastCopyableMonster") !== (0,libram__WEBPACK_IMPORTED_MODULE_2__.$monster)(_templateObject38()) && (0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("_lastSausageMonsterTurn") === 0) {
+  if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("lastCopyableMonster") !== (0,libram__WEBPACK_IMPORTED_MODULE_2__.$monster)(_templateObject39()) && (0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("_lastSausageMonsterTurn") === 0) {
     _lib__WEBPACK_IMPORTED_MODULE_1__.KILL_MACRO.setAutoAttack();
     (0,_lib__WEBPACK_IMPORTED_MODULE_1__.adv)(club);
   }

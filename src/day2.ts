@@ -58,7 +58,7 @@ function pull() {
   cliExecute("pull 1 moon pie");
   cliExecute("pull ol' scratch's salad fork");
   let totalClovers =
-    availableAmount($item`disassembled clover`) + availableAmount($item`disassembled clover`);
+    availableAmount($item`disassembled clover`) + availableAmount($item`ten-leaf clover`);
   cliExecute(`pull ${3 - totalClovers} disassembled clover`);
   cliExecute("pull 1 bag of lard");
 }
@@ -148,6 +148,9 @@ function mobOfProtesters() {
     Macro.abort().setAutoAttack();
     getClover();
     adv($location`A Mob of Zeppelin Protesters`);
+  }
+  if (questStep("questL11Ron") === 1 && get("zeppelinProtestors") >= 80) {
+    visitUrl(toUrl($location`A Mob of Zeppelin Protesters`));
   }
 }
 
