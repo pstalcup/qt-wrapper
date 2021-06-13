@@ -127,7 +127,7 @@ function mobOfProtesters() {
   // +50 / 0 - 50 - 368
   // Dirty Pear - sqrt(736) -
 
-  if (!get("_beachHeadsUsed").includes("5")) cliExecute("beach head sleaze");
+  if (!property.getString("_beachHeadsUsed").includes("5")) cliExecute("beach head sleaze");
   if (!have($effect`Cuts Like a Buttered Knife`)) use($item`bag of lard`);
   maximize("sleaze damage, sleaze spell damage", false);
 
