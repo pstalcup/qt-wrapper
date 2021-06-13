@@ -44889,8 +44889,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var libram__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! libram */ "../kol-js-starter/node_modules/libram/dist/index.js");
 /* harmony import */ var libram__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(libram__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _lib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib */ "./src/lib.ts");
-function _templateObject36() {
+function _templateObject38() {
   var data = _taggedTemplateLiteral(["sausage goblin"]);
+
+  _templateObject38 = function _templateObject38() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject37() {
+  var data = _taggedTemplateLiteral(["Kramco Sausage-o-Matic\u2122"]);
+
+  _templateObject37 = function _templateObject37() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject36() {
+  var data = _taggedTemplateLiteral(["off-hand"]);
 
   _templateObject36 = function _templateObject36() {
     return data;
@@ -44900,7 +44920,7 @@ function _templateObject36() {
 }
 
 function _templateObject35() {
-  var data = _taggedTemplateLiteral(["Kramco Sausage-o-Matic\u2122"]);
+  var data = _taggedTemplateLiteral(["The Copperhead Club"]);
 
   _templateObject35 = function _templateObject35() {
     return data;
@@ -44910,7 +44930,7 @@ function _templateObject35() {
 }
 
 function _templateObject34() {
-  var data = _taggedTemplateLiteral(["off-hand"]);
+  var data = _taggedTemplateLiteral(["A Mob of Zeppelin Protesters"]);
 
   _templateObject34 = function _templateObject34() {
     return data;
@@ -44920,7 +44940,7 @@ function _templateObject34() {
 }
 
 function _templateObject33() {
-  var data = _taggedTemplateLiteral(["The Copperhead Club"]);
+  var data = _taggedTemplateLiteral(["deck of lewd playing cards"]);
 
   _templateObject33 = function _templateObject33() {
     return data;
@@ -44930,7 +44950,7 @@ function _templateObject33() {
 }
 
 function _templateObject32() {
-  var data = _taggedTemplateLiteral(["A Mob of Zeppelin Protesters"]);
+  var data = _taggedTemplateLiteral(["off-hand"]);
 
   _templateObject32 = function _templateObject32() {
     return data;
@@ -44940,7 +44960,7 @@ function _templateObject32() {
 }
 
 function _templateObject31() {
-  var data = _taggedTemplateLiteral(["deck of lewd playing cards"]);
+  var data = _taggedTemplateLiteral(["Fourth of May Cosplay Saber"]);
 
   _templateObject31 = function _templateObject31() {
     return data;
@@ -44950,7 +44970,7 @@ function _templateObject31() {
 }
 
 function _templateObject30() {
-  var data = _taggedTemplateLiteral(["off-hand"]);
+  var data = _taggedTemplateLiteral(["weapon"]);
 
   _templateObject30 = function _templateObject30() {
     return data;
@@ -44960,7 +44980,7 @@ function _templateObject30() {
 }
 
 function _templateObject29() {
-  var data = _taggedTemplateLiteral(["Fourth of May Cosplay Saber"]);
+  var data = _taggedTemplateLiteral(["bag of lard"]);
 
   _templateObject29 = function _templateObject29() {
     return data;
@@ -44970,7 +44990,7 @@ function _templateObject29() {
 }
 
 function _templateObject28() {
-  var data = _taggedTemplateLiteral(["weapon"]);
+  var data = _taggedTemplateLiteral(["Cuts Like a Buttered Knife"]);
 
   _templateObject28 = function _templateObject28() {
     return data;
@@ -44980,7 +45000,7 @@ function _templateObject28() {
 }
 
 function _templateObject27() {
-  var data = _taggedTemplateLiteral(["bag of lard"]);
+  var data = _taggedTemplateLiteral(["A Mob of Zeppelin Protesters"]);
 
   _templateObject27 = function _templateObject27() {
     return data;
@@ -45313,7 +45333,8 @@ function diet() {
 function mobOfProtesters() {
   var disClover = (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject25());
   var tenClover = (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject26());
-  if (!(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)(disClover) && !(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)(tenClover) || (0,_lib__WEBPACK_IMPORTED_MODULE_1__.questStep)("questL11Ron") >= 2) return; // Sleaze Calculation:
+  if (!(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)(disClover) && !(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)(tenClover) || (0,_lib__WEBPACK_IMPORTED_MODULE_1__.questStep)("questL11Ron") >= 2) return;
+  if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("questL11Ron") === "started") (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.visitUrl)((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toUrl)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject27()))); // Sleaze Calculation:
   // beach comb:
   // +15 / +15 - 30 - 30
   // deck of lewd playing cards:
@@ -45330,11 +45351,11 @@ function mobOfProtesters() {
   // +50 / 0 - 50 - 368
   // Dirty Pear - sqrt(736) -
 
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.cliExecute)("beach head sleaze");
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.use)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject27()));
+  if (!(0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("_beachHeadsUsed").includes("5")) (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.cliExecute)("beach head sleaze");
+  if (!(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$effect)(_templateObject28()))) (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.use)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject29()));
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.maximize)("sleaze damage, sleaze spell damage", false);
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject28()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject29()));
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject30()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject31()));
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject32()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject33()));
 
   var getClover = function getClover() {
     if (!(0,libram__WEBPACK_IMPORTED_MODULE_2__.have)(tenClover)) (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.use)(disClover);
@@ -45346,17 +45367,17 @@ function mobOfProtesters() {
   while ((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.availableAmount)(tenClover) + (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.availableAmount)(disClover) > 0 && (0,_lib__WEBPACK_IMPORTED_MODULE_1__.questStep)("questL11Ron") < 2) {
     libram__WEBPACK_IMPORTED_MODULE_2__.Macro.abort().setAutoAttack();
     getClover();
-    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.adv)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject32()));
+    (0,_lib__WEBPACK_IMPORTED_MODULE_1__.adv)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject34()));
   }
 }
 
 function shen(questLevel) {
   if ((0,_lib__WEBPACK_IMPORTED_MODULE_1__.questStep)("questL11Shen") > questLevel || libram__WEBPACK_IMPORTED_MODULE_2__.property.getNumber("_backUpUses") >= 11) return;
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.maximize)("mainstat", false);
-  var club = (0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject33());
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject34()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject35()));
+  var club = (0,libram__WEBPACK_IMPORTED_MODULE_2__.$location)(_templateObject35());
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.equip)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$slot)(_templateObject36()), (0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject37()));
 
-  if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("lastCopyableMonster") !== (0,libram__WEBPACK_IMPORTED_MODULE_2__.$monster)(_templateObject36()) && (0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("_lastSausageMonsterTurn") === 0) {
+  if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("lastCopyableMonster") !== (0,libram__WEBPACK_IMPORTED_MODULE_2__.$monster)(_templateObject38()) && (0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("_lastSausageMonsterTurn") === 0) {
     _lib__WEBPACK_IMPORTED_MODULE_1__.KILL_MACRO.setAutoAttack();
     (0,_lib__WEBPACK_IMPORTED_MODULE_1__.adv)(club);
   }

@@ -15,6 +15,8 @@ import {
   availableAmount,
   pullsRemaining,
   haveEffect,
+  visitUrl,
+  toUrl,
 } from "kolmafia";
 import {
   $item,
@@ -107,7 +109,7 @@ function mobOfProtesters() {
   let tenClover = $item`disassembled clover`;
 
   if ((!have(disClover) && !have(tenClover)) || questStep("questL11Ron") >= 2) return;
-
+  if (get("questL11Ron") === "started") visitUrl(toUrl($location`A Mob of Zeppelin Protesters`));
   // Sleaze Calculation:
   // beach comb:
   // +15 / +15 - 30 - 30
@@ -125,8 +127,8 @@ function mobOfProtesters() {
   // +50 / 0 - 50 - 368
   // Dirty Pear - sqrt(736) -
 
-  cliExecute("beach head sleaze");
-  use($item`bag of lard`);
+  if (!get("_beachHeadsUsed").includes("5")) cliExecute("beach head sleaze");
+  if (!have($effect`Cuts Like a Buttered Knife`)) use($item`bag of lard`);
   maximize("sleaze damage, sleaze spell damage", false);
 
   equip($slot`weapon`, $item`Fourth of May Cosplay Saber`);
