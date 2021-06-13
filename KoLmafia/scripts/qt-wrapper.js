@@ -45010,7 +45010,7 @@ function _templateObject27() {
 }
 
 function _templateObject26() {
-  var data = _taggedTemplateLiteral(["disassembled clover"]);
+  var data = _taggedTemplateLiteral(["ten-leaf clover"]);
 
   _templateObject26 = function _templateObject26() {
     return data;

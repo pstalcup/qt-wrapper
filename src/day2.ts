@@ -106,7 +106,7 @@ function diet() {
 
 function mobOfProtesters() {
   let disClover = $item`disassembled clover`;
-  let tenClover = $item`disassembled clover`;
+  let tenClover = $item`ten-leaf clover`;
 
   if ((!have(disClover) && !have(tenClover)) || questStep("questL11Ron") >= 2) return;
   if (get("questL11Ron") === "started") visitUrl(toUrl($location`A Mob of Zeppelin Protesters`));
