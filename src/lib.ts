@@ -57,7 +57,9 @@ export function tryUse(quantity: number, it: Item) {
 
 export function findItem(letter: string) {
   return $items``
-    .filter((i) => i.name.indexOf(letter) === 0 && availableAmount(i) > 0)
+    .filter(
+      (i) => i.name.indexOf(letter) === 0 && availableAmount(i) > 0 && i.tradeable && i.discardable
+    )
     .reduce((max, i) => (availableAmount(i) > availableAmount(max) ? i : max), $item`none`);
 }
 
