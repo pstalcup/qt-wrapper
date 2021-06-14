@@ -108,16 +108,17 @@ export function propertySkill(propName: string, skill: Skill) {
 
 export function findPizzaItem(
   letter: string,
-  reducer: (a: Item, b: Item) => Item = (a, b) => (autosellPrice(a) < autosellPrice(b) ? a : b)
+  reducer: (a: Item, b: Item) => Boolean = (a, b) => autosellPrice(a) < autosellPrice(b)
 ) {
   if (getWorkshed() !== $item`diabolic pizza cube`) {
     throw "You gotta have your pizza cube out for this to work!";
   }
   const items = xpath(visitUrl("campground.php?action=workshed"), "//form/select/option/text()")
-    .map((string) => toLowerCase(string))
-    .filter((string) => string.indexOf(letter) === 0)
-    .map((string) => string.slice(0, string.indexOf(" (")))
-    .map((string) => toItem(string));
-  if (items !== []) return items.reduce((a, b) => reducer(a, b));
+    .map((string) => toLowerCase(string)) //convert to lowercase to ease comparisons with letter
+    .filter((string) => string.indexOf(toLowerCase(letter)) === 0) //filter it down to the letter we want
+    .map((string) => string.slice(0, string.indexOf(" ("))) //turn "awful poetry journal (1)" into "awful poetry journal"
+    .map((string) => toItem(string)); //convert to items
+  if (items !== []) return items.reduce((a, b) => (reducer(a, b) ? a : b));
+  //reduce to 1 item; default is to pick lowest autosell
   else return $item`none`;
 }

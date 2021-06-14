@@ -45654,22 +45654,31 @@ function propertySkill(propName, skill) {
   }
 }
 function findPizzaItem(letter) {
+  var reducer = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function (a, b) {
+    return (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.autosellPrice)(a) < (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.autosellPrice)(b);
+  };
+
   if ((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.getWorkshed)() !== (0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject4())) {
     throw "You gotta have your pizza cube out for this to work!";
   }
 
   var items = (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.xpath)((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.visitUrl)("campground.php?action=workshed"), "//form/select/option/text()").map(function (string) {
     return (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toLowerCase)(string);
-  }).filter(function (string) {
-    return string.indexOf(letter) === 0;
-  }).map(function (string) {
+  }) //convert to lowercase to ease comparisons with letter
+  .filter(function (string) {
+    return string.indexOf((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toLowerCase)(letter)) === 0;
+  }) //filter it down to the letter we want
+  .map(function (string) {
     return string.slice(0, string.indexOf(" ("));
-  }).map(function (string) {
+  }) //turn "awful poetry journal (1)" into "awful poetry journal"
+  .map(function (string) {
     return (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toItem)(string);
-  });
+  }); //convert to items
+
   if (items !== []) return items.reduce(function (a, b) {
-    return (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.autosellPrice)(a) < (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.autosellPrice)(b) ? a : b;
-  });else return (0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject5());
+    return reducer(a, b) ? a : b;
+  }); //reduce to 1 item; default is to pick lowest autosell
+  else return (0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject5());
 }
 
 /***/ }),
