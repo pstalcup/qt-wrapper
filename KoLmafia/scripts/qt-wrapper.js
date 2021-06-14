@@ -45657,10 +45657,10 @@ function findPizzaItem(letter) {
     throw "You gotta have your pizza cube out for this to work!";
   }
 
-  var item = (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.xpath)((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.visitUrl)("campground.php?action=workshed"), "//form/select/option/text()").filter(function (string) {
-    return string.indexOf(letter) === 0;
-  }).map(function (string) {
+  var item = (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.xpath)((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.visitUrl)("campground.php?action=workshed"), "//form/select/option/text()").map(function (string) {
     return (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toLowerCase)(string);
+  }).filter(function (string) {
+    return string.indexOf(letter) === 0;
   }).map(function (string) {
     return string.slice(0, string.indexOf(" ("));
   }).map(function (string) {
