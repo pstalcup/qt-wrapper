@@ -45632,7 +45632,7 @@ function cookPizza(a, b, c, d) {
   });
   var url = "campground.php?action=makepizza&pizza=".concat((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toInt)(a), ",").concat((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toInt)(b), ",").concat((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toInt)(c), ",").concat((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toInt)(d));
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.print)(url);
-  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.visitUrl)(url, false);
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.visitUrl)(url);
   assert((0,libram__WEBPACK_IMPORTED_MODULE_1__.have)((0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject3())), "Failed to cook pizza ".concat(effect));
 }
 function questStep(questName) {

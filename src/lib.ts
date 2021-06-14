@@ -79,7 +79,7 @@ export function cookPizza(a: Item, b: Item, c: Item, d: Item) {
   });
   let url = `campground.php?action=makepizza&pizza=${toInt(a)},${toInt(b)},${toInt(c)},${toInt(d)}`;
   print(url);
-  visitUrl(url, false);
+  visitUrl(url);
   assert(have($item`diabolic pizza`), `Failed to cook pizza ${effect}`);
 }
 
