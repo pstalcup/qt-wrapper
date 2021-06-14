@@ -112,8 +112,8 @@ function diet() {
   });
 
   withRes("hot", () => {
-    drink($item`ol' scratch's salad fork`);
-    drink($item`moon pie`);
+    eat($item`ol' scratch's salad fork`);
+    eat($item`moon pie`);
   });
 }
 

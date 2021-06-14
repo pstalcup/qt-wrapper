@@ -45421,8 +45421,8 @@ function diet() {
     (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.drink)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject30()));
   });
   withRes("hot", function () {
-    (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.drink)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject31()));
-    (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.drink)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject32()));
+    (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.eat)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject31()));
+    (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.eat)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject32()));
   });
 }
 
