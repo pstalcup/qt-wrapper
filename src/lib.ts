@@ -106,8 +106,9 @@ export function propertySkill(propName: string, skill: Skill) {
 }
 
 export function findPizzaItem(letter: string) {
-  if (getWorkshed() !== $item`diabolic pizza cube`)
+  if (getWorkshed() !== $item`diabolic pizza cube`) {
     throw "You gotta have your pizza cube out for this to work!";
+  }
   const item = xpath(visitUrl("campground.php?action=workshed"), "//form/select/option/text()")
     .filter((string) => string.indexOf(letter) === 0)
     .map((string) => toLowerCase(string))

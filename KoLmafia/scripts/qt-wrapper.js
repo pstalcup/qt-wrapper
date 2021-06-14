@@ -45653,7 +45653,10 @@ function propertySkill(propName, skill) {
   }
 }
 function findPizzaItem(letter) {
-  if ((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.getWorkshed)() !== (0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject4())) throw "You gotta have your pizza cube out for this to work!";
+  if ((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.getWorkshed)() !== (0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject4())) {
+    throw "You gotta have your pizza cube out for this to work!";
+  }
+
   var item = (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.xpath)((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.visitUrl)("campground.php?action=workshed"), "//form/select/option/text()").filter(function (string) {
     return string.indexOf(letter) === 0;
   }).map(function (string) {
