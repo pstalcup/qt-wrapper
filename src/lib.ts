@@ -106,7 +106,10 @@ export function propertySkill(propName: string, skill: Skill) {
   }
 }
 
-export function findPizzaItem(letter: string) {
+export function findPizzaItem(
+  letter: string,
+  reducer: (a: Item, b: Item) => Item = (a, b) => (autosellPrice(a) < autosellPrice(b) ? a : b)
+) {
   if (getWorkshed() !== $item`diabolic pizza cube`) {
     throw "You gotta have your pizza cube out for this to work!";
   }
@@ -115,6 +118,6 @@ export function findPizzaItem(letter: string) {
     .filter((string) => string.indexOf(letter) === 0)
     .map((string) => string.slice(0, string.indexOf(" (")))
     .map((string) => toItem(string));
-  if (items !== []) return items.reduce((a, b) => (autosellPrice(a) < autosellPrice(b) ? a : b));
+  if (items !== []) return items.reduce((a, b) => reducer(a, b));
   else return $item`none`;
 }
