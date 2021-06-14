@@ -45529,16 +45529,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var kolmafia__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(kolmafia__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var libram__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! libram */ "../kol-js-starter/node_modules/libram/dist/index.js");
 /* harmony import */ var libram__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(libram__WEBPACK_IMPORTED_MODULE_1__);
-function _templateObject5() {
-  var data = _taggedTemplateLiteral(["none"]);
-
-  _templateObject5 = function _templateObject5() {
-    return data;
-  };
-
-  return data;
-}
-
 function _templateObject4() {
   var data = _taggedTemplateLiteral(["diabolic pizza cube"]);
 
@@ -45622,6 +45612,7 @@ function findItem(letter) {
 }
 function cookPizza(a, b, c, d) {
   // Taken from Katarn https://github.com/s-k-z/seventy-hccs
+  (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.print)("Cooking ".concat(a, ", ").concat(b, ", ").concat(c, ", and ").concat(d, " into a pizza"));
   var ingredients = Array.prototype.slice.call(arguments);
   var effect = ingredients.reduce(function (s, i) {
     return s + i.name[0];
@@ -45667,7 +45658,7 @@ function findPizzaItem(letter) {
     return (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toItem)(string);
   }).reduce(function (a, b) {
     return (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.autosellPrice)(a) < (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.autosellPrice)(b) ? a : b;
-  }, (0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject5()));
+  });
   return item;
 }
 

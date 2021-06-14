@@ -70,6 +70,7 @@ export function findItem(letter: string) {
 
 export function cookPizza(a: Item, b: Item, c: Item, d: Item) {
   // Taken from Katarn https://github.com/s-k-z/seventy-hccs
+  print(`Cooking ${a}, ${b}, ${c}, and ${d} into a pizza`);
   let ingredients = [...arguments];
   let effect = ingredients.reduce((s, i) => s + i.name[0], "");
 
@@ -114,6 +115,6 @@ export function findPizzaItem(letter: string) {
     .filter((string) => string.indexOf(letter) === 0)
     .map((string) => string.slice(0, string.indexOf(" (")))
     .map((string) => toItem(string))
-    .reduce((a, b) => (autosellPrice(a) < autosellPrice(b) ? a : b), $item`none`);
+    .reduce((a, b) => (autosellPrice(a) < autosellPrice(b) ? a : b));
   return item;
 }
