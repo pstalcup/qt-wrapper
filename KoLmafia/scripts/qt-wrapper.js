@@ -45529,6 +45529,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var kolmafia__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(kolmafia__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var libram__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! libram */ "../kol-js-starter/node_modules/libram/dist/index.js");
 /* harmony import */ var libram__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(libram__WEBPACK_IMPORTED_MODULE_1__);
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["none"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject4() {
   var data = _taggedTemplateLiteral(["diabolic pizza cube"]);
 
@@ -45648,7 +45658,7 @@ function findPizzaItem(letter) {
     throw "You gotta have your pizza cube out for this to work!";
   }
 
-  var item = (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.xpath)((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.visitUrl)("campground.php?action=workshed"), "//form/select/option/text()").map(function (string) {
+  var items = (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.xpath)((0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.visitUrl)("campground.php?action=workshed"), "//form/select/option/text()").map(function (string) {
     return (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toLowerCase)(string);
   }).filter(function (string) {
     return string.indexOf(letter) === 0;
@@ -45656,10 +45666,10 @@ function findPizzaItem(letter) {
     return string.slice(0, string.indexOf(" ("));
   }).map(function (string) {
     return (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toItem)(string);
-  }).reduce(function (a, b) {
-    return (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.autosellPrice)(a) < (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.autosellPrice)(b) ? a : b;
   });
-  return item;
+  if (items !== []) return items.reduce(function (a, b) {
+    return (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.autosellPrice)(a) < (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.autosellPrice)(b) ? a : b;
+  });else return (0,libram__WEBPACK_IMPORTED_MODULE_1__.$item)(_templateObject5());
 }
 
 /***/ }),

@@ -110,11 +110,11 @@ export function findPizzaItem(letter: string) {
   if (getWorkshed() !== $item`diabolic pizza cube`) {
     throw "You gotta have your pizza cube out for this to work!";
   }
-  const item = xpath(visitUrl("campground.php?action=workshed"), "//form/select/option/text()")
+  const items = xpath(visitUrl("campground.php?action=workshed"), "//form/select/option/text()")
     .map((string) => toLowerCase(string))
     .filter((string) => string.indexOf(letter) === 0)
     .map((string) => string.slice(0, string.indexOf(" (")))
-    .map((string) => toItem(string))
-    .reduce((a, b) => (autosellPrice(a) < autosellPrice(b) ? a : b));
-  return item;
+    .map((string) => toItem(string));
+  if (items !== []) return items.reduce((a, b) => (autosellPrice(a) < autosellPrice(b) ? a : b));
+  else return $item`none`;
 }
