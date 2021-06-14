@@ -17,6 +17,8 @@ import {
   haveEffect,
   visitUrl,
   toUrl,
+  autosellPrice,
+  create,
 } from "kolmafia";
 import {
   $item,
@@ -84,6 +86,10 @@ function diet() {
     : findPizzaItem("i");
   let r = $item`ravioli hat`;
   let t = have($item`typical tavern swill`) ? $item`typical tavern swill` : findPizzaItem("t");
+  if (autosellPrice(t) + autosellPrice(i) < 7) {
+    create(1, $item`dense meat stack`);
+    d = $item`dense meat stack`;
+  }
 
   cookPizza(d, i, r, t);
   eat($item`diabolic pizza`);

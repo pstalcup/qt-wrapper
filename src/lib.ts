@@ -11,6 +11,8 @@ import {
   print,
   getWorkshed,
   toItem,
+  xpath,
+  autosellPrice,
 } from "kolmafia";
 import { have, Macro, $items, $item, property } from "libram";
 
@@ -105,9 +107,11 @@ export function propertySkill(propName: string, skill: Skill) {
 export function findPizzaItem(letter: string) {
   if (getWorkshed() !== $item`diabolic pizza cube`)
     throw "You gotta have your pizza cube out for this to work!";
-  const searcher = new RegExp(`value="\d+"\>(${letter}[^<]+)\s\(\d+\)\<\/option\>`);
-  const pizzaCube = visitUrl("campground.php?action=workshed");
-  const item = pizzaCube.match(searcher);
-  if (item) return toItem(item[1]);
+  const item = xpath(visitUrl("campground.php?action=workshed"), "//form/select/option/text()")
+    .filter((string) => string.indexOf(letter) === 0)
+    .map((string) => string.slice(0, string.indexOf(" (")))
+    .map((string) => toItem(string))
+    .reduce((a, b) => (autosellPrice(a) < autosellPrice(b) ? a : b));
+  if (item) return item;
   else return $item`none`;
 }
