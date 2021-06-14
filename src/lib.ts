@@ -13,6 +13,7 @@ import {
   toItem,
   xpath,
   autosellPrice,
+  toLowerCase,
 } from "kolmafia";
 import { have, Macro, $items, $item, property } from "libram";
 
@@ -109,9 +110,9 @@ export function findPizzaItem(letter: string) {
     throw "You gotta have your pizza cube out for this to work!";
   const item = xpath(visitUrl("campground.php?action=workshed"), "//form/select/option/text()")
     .filter((string) => string.indexOf(letter) === 0)
+    .map((string) => toLowerCase(string))
     .map((string) => string.slice(0, string.indexOf(" (")))
     .map((string) => toItem(string))
-    .reduce((a, b) => (autosellPrice(a) < autosellPrice(b) ? a : b));
-  if (item) return item;
-  else return $item`none`;
+    .reduce((a, b) => (autosellPrice(a) < autosellPrice(b) ? a : b), $item`none`);
+  return item;
 }
