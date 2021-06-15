@@ -9,6 +9,11 @@ import {
   visitUrl,
   toInt,
   print,
+  getWorkshed,
+  toItem,
+  xpath,
+  autosellPrice,
+  toLowerCase,
 } from "kolmafia";
 import { have, Macro, $items, $item, property } from "libram";
 
@@ -65,6 +70,7 @@ export function findItem(letter: string) {
 
 export function cookPizza(a: Item, b: Item, c: Item, d: Item) {
   // Taken from Katarn https://github.com/s-k-z/seventy-hccs
+  print(`Cooking ${a}, ${b}, ${c}, and ${d} into a pizza`);
   let ingredients = [...arguments];
   let effect = ingredients.reduce((s, i) => s + i.name[0], "");
 
@@ -73,7 +79,7 @@ export function cookPizza(a: Item, b: Item, c: Item, d: Item) {
   });
   let url = `campground.php?action=makepizza&pizza=${toInt(a)},${toInt(b)},${toInt(c)},${toInt(d)}`;
   print(url);
-  visitUrl(url, false);
+  visitUrl(url);
   assert(have($item`diabolic pizza`), `Failed to cook pizza ${effect}`);
 }
 
@@ -98,4 +104,21 @@ export function propertySkill(propName: string, skill: Skill) {
   if (!property.getBoolean(propName)) {
     useSkill(skill);
   }
+}
+
+export function findPizzaItem(
+  letter: string,
+  reducer: (a: Item, b: Item) => Boolean = (a, b) => autosellPrice(a) < autosellPrice(b)
+) {
+  if (getWorkshed() !== $item`diabolic pizza cube`) {
+    throw "You gotta have your pizza cube out for this to work!";
+  }
+  const items = xpath(visitUrl("campground.php?action=workshed"), "//form/select/option/text()")
+    .map((string) => toLowerCase(string)) //convert to lowercase to ease comparisons with letter
+    .filter((string) => string.indexOf(toLowerCase(letter)) === 0) //filter it down to the letter we want
+    .map((string) => string.slice(0, string.indexOf(" ("))) //turn "awful poetry journal (1)" into "awful poetry journal"
+    .map((string) => toItem(string)); //convert to items
+  if (items !== []) return items.reduce((a, b) => (reducer(a, b) ? a : b));
+  //reduce to 1 item; default is to pick lowest autosell
+  else return $item`none`;
 }

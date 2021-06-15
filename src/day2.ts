@@ -17,6 +17,8 @@ import {
   haveEffect,
   visitUrl,
   toUrl,
+  autosellPrice,
+  create,
 } from "kolmafia";
 import {
   $item,
@@ -39,6 +41,7 @@ import {
   BACKUP_MACRO,
   autoAttackWrap,
   setChoice,
+  findPizzaItem,
 } from "./lib";
 
 function withRes(element: string, action: () => void) {
@@ -74,9 +77,19 @@ function diet() {
   if (!have($item`ravioli hat`)) retrieveItem($item`ravioli hat`);
 
   let d = $item`dry noodles`;
-  let i = $item`imp ale`;
+  let i = have($item`imp ale`)
+    ? $item`imp ale`
+    : have($item`inkwell`)
+    ? $item`inkwell`
+    : have($item`infernal insoles`)
+    ? $item`infernal insoles`
+    : findPizzaItem("i");
   let r = $item`ravioli hat`;
-  let t = $item`typical tavern swill`;
+  let t = have($item`typical tavern swill`) ? $item`typical tavern swill` : findPizzaItem("t");
+  if (autosellPrice(t) + autosellPrice(i) < 7) {
+    create(1, $item`dense meat stack`);
+    d = $item`dense meat stack`;
+  }
 
   cookPizza(d, i, r, t);
   eat($item`diabolic pizza`);
@@ -99,8 +112,8 @@ function diet() {
   });
 
   withRes("hot", () => {
-    drink($item`ol' scratch's salad fork`);
-    drink($item`moon pie`);
+    eat($item`ol' scratch's salad fork`);
+    eat($item`moon pie`);
   });
 }
 
