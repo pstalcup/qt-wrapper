@@ -129,9 +129,11 @@ function turn0() {
   autosellAll($item`hamethyst`);
 
   buy($item`toy accordion`);
-
-  chew($item`abstraction: category`);
+  if (get("_campAwayCloudBuffs") === 0) {
+    visitUrl("place.php?whichplace=campaway&action=campaway_sky");
+  }
   chew($item`non-euclidean angle`);
+  chew($item`abstraction: category`);
   cliExecute("cargo pick 37");
 
   visitUrl("council.php");
