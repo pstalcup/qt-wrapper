@@ -44061,7 +44061,11 @@ function turn0() {
   autosellAll((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject29 || (_templateObject29 = _taggedTemplateLiteral(["porquoise"]))));
   autosellAll((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject30 || (_templateObject30 = _taggedTemplateLiteral(["hamethyst"]))));
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.buy)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject31 || (_templateObject31 = _taggedTemplateLiteral(["toy accordion"]))));
-  if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("_campAwayCloudBuffs")) (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.visitUrl)("place.php?whichplace=campaway&action=campaway_sky");
+
+  if ((0,libram__WEBPACK_IMPORTED_MODULE_2__.get)("_campAwayCloudBuffs") === 0) {
+    (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.visitUrl)("place.php?whichplace=campaway&action=campaway_sky");
+  }
+
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.chew)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject32 || (_templateObject32 = _taggedTemplateLiteral(["non-euclidean angle"]))));
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.chew)((0,libram__WEBPACK_IMPORTED_MODULE_2__.$item)(_templateObject33 || (_templateObject33 = _taggedTemplateLiteral(["abstraction: category"]))));
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.cliExecute)("cargo pick 37");
