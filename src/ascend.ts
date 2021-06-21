@@ -14,7 +14,7 @@ export function ascend(
   lifestyle: lifestyle,
   moon: string | number,
   consumable: Item | undefined = $item`astral six-pack`,
-  pet: Item | undefined
+  pet: Item | undefined = undefined
 ) {
   if (!containsText(visitUrl("charpane.php"), "Astral Spirit")) {
     print("It'd really be better if you were already through the gash. Oh well!", "blue");
@@ -77,7 +77,7 @@ export function ascend(
   const classid = toInt(playerClass);
   if (pathId < 0) throw `Invalid path ID ${pathId}`;
   if (toMoonId(moon) < 1) throw `Invalid moon ${moon}`;
-  if (playerClass === $class`none` || toInt(playerClass) > 6) throw `Invalid class ${playerClass}`;
+  if (playerClass === $class`none` || toInt(playerClass) > 6) throw `Unsupported class ${playerClass}`;
   if (avatarPathIds.includes(pathId)) throw `Unsupported path ${pathId}`;
   if (consumable && !$items`astral six-pack, astral hot dog dinner`.includes(consumable))
     throw `Invalid consumable ${consumable}`;
