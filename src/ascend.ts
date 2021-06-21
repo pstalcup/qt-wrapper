@@ -83,7 +83,7 @@ export function ascend(
   const pathid = typeof path === "number" ? path : paths.get(path.toLowerCase());
   const classid = toInt(playerClass);
   if (
-    !pathid ||
+    typeof pathid !== "number" ||
     !coreid ||
     !moonid ||
     !Array.from(cores.values()).includes(coreid) ||
