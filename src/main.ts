@@ -1,8 +1,8 @@
 import { $class, $item, get, have } from "libram";
-import { retrieveItem, print, getCampground, getWorkshed, use, visitUrl } from "kolmafia";
+import { retrieveItem, print, getCampground, getWorkshed, use, visitUrl, pathNameToId } from "kolmafia";
 import { day1 } from "./day1";
 import { day2 } from "./day2";
-import { ascend } from "./ascend";
+import { ascend, lifestyle } from "./ascend";
 
 function restock() {
   retrieveItem(6, $item`wrecked generator`);
@@ -45,9 +45,9 @@ export function main(arg: String) {
     }
     visitUrl("ascend.php?action=ascend&confirm=on&confirm2=on");
     ascend(
-      "quantum terrarium",
+      pathNameToId("Quantum Terrarium"),
       $class`sauceror`,
-      "softcore",
+      lifestyle.softcore,
       2,
       $item`astral six-pack`,
       $item`astral pet sweater`
