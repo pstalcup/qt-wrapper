@@ -1,5 +1,13 @@
 import { $class, $item, get, have } from "libram";
-import { retrieveItem, print, getCampground, getWorkshed, use, visitUrl, pathNameToId } from "kolmafia";
+import {
+  retrieveItem,
+  print,
+  getCampground,
+  getWorkshed,
+  use,
+  visitUrl,
+  pathNameToId,
+} from "kolmafia";
 import { day1 } from "./day1";
 import { day2 } from "./day2";
 import { ascend, lifestyle } from "./ascend";
