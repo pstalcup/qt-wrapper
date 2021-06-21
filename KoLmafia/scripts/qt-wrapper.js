@@ -44109,9 +44109,10 @@ function ascend(pathId, playerClass, lifestyle, moon) {
   };
 
   var classid = (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toInt)(playerClass);
-  if (pathId < 0) throw "Invalid path ID";
-  if (toMoonId(moon) < 1) throw "Invalid moon";
-  if (playerClass === (0,libram__WEBPACK_IMPORTED_MODULE_1__.$class)(_templateObject5()) || !avatarPathIds.includes(pathId)) throw "Invalid class ".concat(playerClass);
+  if (pathId < 0) throw "Invalid path ID ".concat(pathId);
+  if (toMoonId(moon) < 1) throw "Invalid moon ".concat(moon);
+  if (playerClass === (0,libram__WEBPACK_IMPORTED_MODULE_1__.$class)(_templateObject5()) || (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.toInt)(playerClass) > 6) throw "Invalid class ".concat(playerClass);
+  if (avatarPathIds.includes(pathId)) throw "Unsupported path ".concat(pathId);
   if (consumable && !(0,libram__WEBPACK_IMPORTED_MODULE_1__.$items)(_templateObject6()).includes(consumable)) throw "Invalid consumable ".concat(consumable);
   if (pet && !(0,libram__WEBPACK_IMPORTED_MODULE_1__.$items)(_templateObject7()).includes(pet)) throw "Invalid astral item ".concat(pet);
   (0,kolmafia__WEBPACK_IMPORTED_MODULE_0__.visitUrl)("afterlife.php?action=pearlygates");

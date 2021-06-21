@@ -75,10 +75,10 @@ export function ascend(
     }
   };
   const classid = toInt(playerClass);
-  if (pathId < 0) throw `Invalid path ID`;
-  if (toMoonId(moon) < 1) throw `Invalid moon`;
-  if (playerClass === $class`none` || !avatarPathIds.includes(pathId))
-    throw `Invalid class ${playerClass}`;
+  if (pathId < 0) throw `Invalid path ID ${pathId}`;
+  if (toMoonId(moon) < 1) throw `Invalid moon ${moon}`;
+  if (playerClass === $class`none` || toInt(playerClass) > 6) throw `Invalid class ${playerClass}`;
+  if (avatarPathIds.includes(pathId)) throw `Unsupported path ${pathId}`;
   if (consumable && !$items`astral six-pack, astral hot dog dinner`.includes(consumable))
     throw `Invalid consumable ${consumable}`;
   if (
