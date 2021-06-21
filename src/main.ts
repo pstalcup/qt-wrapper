@@ -10,7 +10,7 @@ import {
 } from "kolmafia";
 import { day1 } from "./day1";
 import { day2 } from "./day2";
-import { ascend, lifestyle } from "./ascend";
+import { ascend, lifestyle, path } from "./ascend";
 
 function restock() {
   retrieveItem(6, $item`wrecked generator`);
@@ -53,7 +53,7 @@ export function main(arg: String) {
     }
     visitUrl("ascend.php?action=ascend&confirm=on&confirm2=on");
     ascend(
-      pathNameToId("Quantum Terrarium"),
+      path.quantumTerrarium,
       $class`sauceror`,
       lifestyle.softcore,
       2,
