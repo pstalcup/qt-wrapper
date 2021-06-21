@@ -1,7 +1,8 @@
-import { $item } from "libram";
-import { retrieveItem, print } from "kolmafia";
+import { $class, $item, get, have } from "libram";
+import { retrieveItem, print, getCampground, getWorkshed, use, visitUrl } from "kolmafia";
 import { day1 } from "./day1";
 import { day2 } from "./day2";
+import { ascend } from "./ascend";
 
 function restock() {
   retrieveItem(6, $item`wrecked generator`);
@@ -33,6 +34,24 @@ export function main(arg: String) {
     day1();
   } else if (arg.includes("day2")) {
     day2();
+  } else if (arg.includes("ascend") || arg.includes("gash")) {
+    const pizza = $item`diabolic pizza cube`;
+    const mushroom = $item`packet of mushroom spores`;
+    if (!Object.getOwnPropertyNames(getCampground()).includes(mushroom.name) && have(mushroom))
+      use(mushroom);
+    if (getWorkshed() !== pizza) {
+      if (get("_workshedItemUsed") || !have(pizza)) throw "Unable to cube your pizza :c";
+      use(pizza);
+    }
+    visitUrl("ascend.php?action=ascend&confirm=on&confirm2=on");
+    ascend(
+      "quantum terrarium",
+      $class`sauceror`,
+      "softcore",
+      2,
+      $item`astral six-pack`,
+      $item`astral pet sweater`
+    );
   } else {
     help();
   }
